@@ -1,5 +1,6 @@
 % Yo, this is just some basic things that you should know in MATLAB
 % I'll try to keep things as explicit and simple as possible
+
 %! First command, to clear the window, **it's clc, not clear**
 
 %! Variables
