@@ -105,4 +105,31 @@ y(:, 3); % A colon with no numbers means that you want the entire column. The 3r
 
 number = matrix(2,3); % This will store the 2nd row, 3rd column element, that element is 12
 
+x(1, end); % This refers to the first row, last column element, in this case 9
+           % You can even do end - 1 for the second last column element
+
+%! Scalar things
+% You can do scalar addition
+
+x = [1 2 3];
+y = x + 2; % This adds 2 to the whole matrix
+
+% You can also add two arrays, as long as they are the same size
+% Scalar multiplication and division also works in the way you'd usually expect, but '*' does matrix multiplication, and '.*' does element-wise multiplication (multiplying each element with the other element).
+
+%! Variable Manipulation
+% If you have a matrix, and you want to have two variables be equal to the size of the matrix, do the following:
+
+[x, y] = size(Matrix); % If the size of the matrix is 2 x 4, then x = 2, y = 4
+
+%! Plotting (Graphing)
+% Did you know you can make graphs in MATLAB? You can use the plot function.
+% If you have two arrays, one named "x", and one named "y", you can use the plot function:
+
+plot(x, y); % In your MATLAB IDE (or VS with the MATLAB extension), you'll see the graph that has been plotted. 
+
+plot(x, y, "r--off"); % The part in the quotation marks cuztomize your graph. In this case, the line will be red, it'll be a dashed line, and each point will be an '*' character
+
+%* If you want two lines on a single graph rather than two, use the "hold on" function in between the two plot functions.
+%* To undo this, use "hold off" function
 
