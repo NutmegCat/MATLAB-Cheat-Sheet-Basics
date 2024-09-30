@@ -132,4 +132,3 @@ plot(x, y, "r--off"); % The part in the quotation marks cuztomize your graph. In
 
 %* If you want two lines on a single graph rather than two, use the "hold on" function in between the two plot functions.
 %* To undo this, use "hold off" function
-
